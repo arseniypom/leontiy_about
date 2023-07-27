@@ -8,7 +8,6 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         'links-en': resolve(__dirname, 'pages/en/links.html'),
-        'links-ru': resolve(__dirname, 'pages/ru/links.html'),
       },
     },
   },
