@@ -24,49 +24,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leontiy About</title>
   </head>
-  <body class="bg-orange-100">
-    <nav id="header" class="container mx-auto py-5 flex flex-col items-center">
-      <div class="text-xl">@leontiy_about</div>
-      <div class="rounded-full overflow-hidden mt-3">
-        <img
-          class="object-cover h-36 w-36"
-          src="/images/profile.jpeg"
-          alt="profile picture"
-        />
-      </div>
-      <div class="flex gap-3 mt-3">
-        <a href="https://www.instagram.com/leontiy_about/" target="_blank">
+  <body class="bg-customBlue text-white flex flex-col h-screen">
+    <div class="content">
+      <nav
+        id="header"
+        class="container mx-auto py-5 flex flex-col items-center"
+      >
+        <div class="rounded-full overflow-hidden my-3">
           <img
-            src="/images/instagram.png"
-            class="media-logo"
-            alt="instagram logo"
+            class="object-cover h-36 w-36"
+            src="/images/profile2.jpg"
+            alt="profile picture"
           />
-        </a>
+        </div>
+        <p class="font-shoika text-sm text-center w-5/6 mt-2">
+          👋 Hi, I'm Sofia! I used to be an oil & gas consultant and now I'm
+          beginning a new chapter in sustainability. Stay tuned!
+        </p>
+        <div class="flex gap-3 mt-4 mb-2">
+          <a href="https://www.instagram.com/leontiy_about/" target="_blank">
+            <img
+              src="/images/inst-white.svg"
+              class="media-logo w-8"
+              alt="instagram logo"
+            />
+          </a>
+          <a href="https://www.tiktok.com/@leontiy_about" target="_blank">
+            <img
+              src="/images/tt-white.svg"
+              class="media-logo w-8"
+              alt="tiktok logo"
+            />
+          </a>
+        </div>
+      </nav>
+      <div id="main" class="container mx-auto max-w-xs">
         <a
-          href="https://www.youtube.com/channel/UCUmPojsSQZwzHOzrHSTJyTA"
-          target="_blank"
+          href="/"
+          class="button-primary bg-red-600 border-red-600 h-[56px]"
+          data-te-ripple-init
         >
           <img
-            src="/images/youtube.png"
-            class="media-logo"
+            src="/images/yt-white2.svg"
+            class="button-primary-icon w-8"
             alt="youtube logo"
           />
+          <div class="button-primary-text">
+            <p class="button-primary-text-header text-center pr-6">
+              Interview: <br />
+              Eco-business in Turkey
+            </p>
+            <p class="button-primary-text-subheader text-white"></p>
+          </div>
         </a>
-        <a href="https://www.tiktok.com/@leontiy_about" target="_blank">
-          <img src="/images/tiktok.png" class="media-logo" alt="tiktok logo" />
+        <a
+          href="mailto:leontii.business@gmail.com"
+          class="button-primary h-[56px] mt-3"
+          data-te-ripple-init
+        >
+          <img
+            src="/images/mail-white.svg"
+            class="button-primary-icon w-6"
+            alt="mail logo"
+          />
+          <div class="button-primary-text">
+            <p class="button-primary-text-header pr-6">Contact Me</p>
+          </div>
         </a>
       </div>
-    </nav>
-    <div id="main" class="container mx-auto mt-5 max-w-xs">
-      <a
-        href="/leontiy_about"
-        class="button-primary"
-        data-te-ripple-init
-      >
-        My Website
-    </a>
     </div>
-    <div id="footer" class="bg-lime-600"></div>
+    <div id="footer" class="bg-lime-600 py-5 shrink-0">
+      <div class="text-xl text-center">
+        @leontiy_about
+      </div>
+    </div>
     <script type="module" src="../../src/main.js"></script>
   </body>
 </html>

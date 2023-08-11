@@ -12,6 +12,10 @@
     font-weight: lighter;
     src: url('/fonts/shoika-light.ttf') format('truetype');
   }
+
+  .content {
+    flex: 1 0 auto;
+  }
 }
 
 @layer components {
@@ -20,7 +24,7 @@
   }
 
   .media-logo {
-    @apply w-7 transition duration-300 hover:scale-125;
+    @apply transition duration-300 hover:scale-125;
   }
 
   .nav-link {
@@ -29,6 +33,27 @@
   }
 
   .button-primary {
-    @apply flex justify-center items-center h-12 w-full rounded-full border-2 border-green-800 font-medium uppercase leading-normal text-green-800 transition duration-150 ease-in-out hover:bg-green-800 hover:text-white focus:bg-green-800 focus:text-white focus:outline-none focus:ring-0 active:bg-green-800 active:text-white;
+    @apply flex justify-between items-center w-full rounded-full border-2 border-white font-medium  leading-normal text-white transition duration-150 ease-in-out ;
+  }
+
+  .button-primary-icon {
+    @apply ml-6;
+  }
+
+  .button-primary-text {
+    @apply font-shoika flex flex-col justify-center items-center w-10/12;
+  }
+
+  .button-primary-text-header {
+    @apply leading-5;
+  }
+
+  .button-primary-text-subheader {
+    /* @apply text-xs text-gray-300; */
+    @apply text-xs;
+  }
+
+  .button-yt {
+    @apply flex justify-center items-center w-full rounded-full border-2 border-ytRed bg-ytRed font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-white hover:text-customBlue focus:bg-white focus:text-customBlue focus:outline-none focus:ring-0 active:bg-white active:text-customBlue;
   }
 }
